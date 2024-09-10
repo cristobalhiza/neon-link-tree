@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link in Bio | Cristobal Hiza</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #fe59d7;
+            background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("https://iili.io/dStTrcG.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-blend-mode: multiply;
+            font-family: "Poppins", sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        main {
+            text-align: center;
+            margin: 30px 50px 20px 50px;
+        }
+        .user-img {
+            border-radius: 50px;
+            max-width: 100px;
+            box-shadow: 0 0 10px 3px #22e4f0;
+        }
+        main h1 {
+            color: white;
+            font-size: 2rem;
+            text-shadow: 2px 2px 5px #22e4f0;
+            margin: 0.5em 0 1.5em 0;
+        }
+        .link {
+            height: 50px;
+            width: 100%;
+            background-color: #12cad6;
+            box-shadow: 0 0 10px 3px #fe59d7;
+            margin-top: 1.3rem;
+            transform: skewX(-45deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+            color: white;
+        }
+        .link:hover {
+            background-color: #ff59d7;
+            box-shadow: 0 0 15px 5px #12cad6;
+            transform: scale(1.05);
+            color: #fff;
+        }
+        .link span {
+            transform: skewX(45deg);
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        @media screen and (min-width: 500px) {
+            body {
+                padding: 20px 50px;
+            }
+        }
+        @media screen and (min-width: 800px) {
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+            }
+            main {
+                min-width: 800px;
+                padding: 20px 50px;
+            }
+            .link {
+                height: 60px;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <img class="user-img" src="https://github.com/cristobalhiza.png" alt="Cristobal Hiza" />
+        <h1>Cristobal Hiza</h1>
+        <div class="link"><span><a href="https://www.linkedin.com/in/cristobal-hiza/" target="_blank">LinkedIn</a></span></div>
+        <div class="link"><span><a href="https://github.com/cristobalhiza" target="_blank">GitHub</a></span></div>
+        <div class="link"><span><a href="https://www.cristobalhiza.com/" target="_blank">Website</a></span></div>
+        <div class="link"><span><a href="mailto:contacto@cristobalhiza.com" target="_blank">Email</a></span></div>
+    </main>
+</body>
+</html>
